@@ -2,8 +2,8 @@ import axios from "axios";
 
 // Membuat instance axios
 export const api = axios.create({
-  baseURL: "http://localhost:3002/",
-  // baseURL: "https://backendspkkucing-kinmiu-kinmius-projects.vercel.app/",
+  // baseURL: "http://localhost:3002/",
+  baseURL: "https://backendspkkucing-kinmiu-kinmius-projects.vercel.app/",
   withCredentials: true // Memastikan cookies dikirim dalam setiap request
 });
 
@@ -47,5 +47,6 @@ api.interceptors.response.use(
 );
 
 export const region = axios.create({
-  baseURL: "https://localhost:3002/"
+  // baseURL: "https://localhost:3002/"
+  baseURL: "https://backendspkkucing-kinmiu-kinmius-projects.vercel.app/"
 });
